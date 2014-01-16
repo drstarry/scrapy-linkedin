@@ -29,7 +29,7 @@ MONGODB_SERVER = '10.1.1.111'
 MONGODB_PORT = 12345
 # MONGODB_SERVER = 'localhost'
 # MONGODB_PORT = 27017
-MONGODB_DB = 'flickr'
+MONGODB_DB = 'livejournal'
 MONGODB_COLLECTION = 'profiles'
 MONGODB_UNIQ_KEY = '_id'
 ###########
