@@ -13,21 +13,17 @@ class FlickrItem(Item):
     friend = Field()
 
 
-class PersonProfileItem(Item):
+class FlickrProfileItem(Item):
     _id = Field()
-    url = Field()
-    name = Field()
-    also_view = Field()
-    education = Field()
+    given_name = Field()
+    family_name = Field()
+    joined = Field()
+    home = Field()
     locality = Field()
-    industry = Field()
-    summary = Field()
-    specilities = Field()
-    skills = Field()
-    interests = Field()
-    group = Field()
-    honors = Field()
-    education = Field()
-    experience = Field()
-    overview_html = Field()
-    homepage = Field()
+    country_name = Field()
+    gender = Field()
+    occupation = Field()
+    websitename = Field()
+    websiteurl = Field()
+
+
