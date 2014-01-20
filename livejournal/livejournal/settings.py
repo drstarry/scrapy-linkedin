@@ -18,21 +18,21 @@ DEFAULT_ITEM_CLASS = 'livejournal.items.livejournalItem'
 # 'livejournal.pipelines.JsonWriterPipeline': 800,
 # }
 ########### Item pipeline
-ITEM_PIPELINES = [
-    "livejournal.pipelines.MongoDBPipeline",
-]
+# ITEM_PIPELINES = [
+#     "livejournal.pipelines.MongoDBPipeline",
+# ]
 
-#in
-MONGODB_SERVER = '10.1.1.111'
-#out
-#MONGODB_SERVER = ''
-MONGODB_PORT = 12345
-# MONGODB_SERVER = 'localhost'
-# MONGODB_PORT = 27017
-MONGODB_DB = 'livejournal'
-MONGODB_COLLECTION = 'profiles'
-MONGODB_UNIQ_KEY = '_id'
-###########
+# #in
+# MONGODB_SERVER = '10.1.1.111'
+# #out
+# #MONGODB_SERVER = ''
+# MONGODB_PORT = 12345
+# # MONGODB_SERVER = 'localhost'
+# # MONGODB_PORT = 27017
+# MONGODB_DB = 'livejournal'
+# MONGODB_COLLECTION = 'profiles'
+# MONGODB_UNIQ_KEY = '_id'
+# ###########
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'linkedin (+http://www.yourdomain.com)'

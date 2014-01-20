@@ -8,7 +8,19 @@ from scrapy.item import Item, Field
 class LivejournalItem(Item):
     # define the fields for your item here like:
     # name = Field()
-    # _id = Field()
+    _id = Field()
     pname = Field()
     url = Field()
     friend = Field()
+
+class LivejournalprofileItem(Item):
+    _id = Field()
+    name = Field()
+    birthday = Field()
+    locality = Field()
+    country_name = Field()
+    website = Field()
+    contacts = Field()
+    schools = Field()
+    bio = Field()
+
