@@ -66,8 +66,8 @@ class LiveJournalprofileSpider(CrawlSpider):
                 contacts = []
                 try:
 
-                    mailname = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-mail"]/*/span/a/text()').extract()[0]
-                    mailurl = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-mail"]/span[2]/span/a/@href').extract()[0]
+                    mailname = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-mail"]/span[2]/text()').extract()[0]
+                    mailurl = 'mailto:' + mailname
                     print 'mail:',mailname,mailurl
                 except:
                     print '~'
@@ -94,8 +94,8 @@ class LiveJournalprofileSpider(CrawlSpider):
                     contacts.append({"vkname":vkname,"vkurl":vkurl})
 
                 try:
-                    ljtname = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-ljtalk"]/span/a/text()').extract()
-                    ljturl = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-ljtalk"]/span/a/@href').extract()
+                    ljtname = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-ljtalk"]/text()').extract()
+                    ljturl = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-ljtalk"]/a/@href').extract()
                     print 'ljt:',ljtname,ljturl
                 except:
                     pass
