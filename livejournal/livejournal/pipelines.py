@@ -22,18 +22,21 @@ class MongoDBPipeline(object):
             self.collection.create_index(self.__get_uniq_key(), unique=True)
 
     def process_item(self, item, spider):
+
         if self.__get_uniq_key() is None:
             self.collection.insert(dict(item))
         else:
             old_item = self.collection.find_one({"_id": item["_id"]})
+            print type(item)
             if type(item) is LivejournalprofileItem:
-                print "Append profile for", item["_id"]
+                print "Append profile for", item["_id"],old_item
                 for k in item:
                     old_item[k] = item[k]
+                print "old",old_item
                 old_item["profile"] = True
             self.collection.update(
                             {self.__get_uniq_key(): item[self.__get_uniq_key()]},
-                            dict(item),
+                            dict(old_item),
                             upsert=True)
         log.msg("Item wrote to MongoDB database %s/%s" %
                     (settings['MONGODB_DB'], settings['MONGODB_COLLECTION']),

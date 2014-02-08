@@ -1,6 +1,7 @@
 from scrapy.selector import HtmlXPathSelector
 from scrapy.contrib.spiders import CrawlSpider
 from scrapy.http import Request
+import pymongo
 
 from ..items import LivejournalprofileItem
 
@@ -9,7 +10,7 @@ class LiveJournalprofileSpider(CrawlSpider):
     name = "livejournalprofile"
     allowed_domains = []
     # g_ = open('id_lists.dat', 'r')
-    mongo = pymongo.Connection("10.1.1.111", 12345)["livejournal"]["profiles"]
+    mongo = pymongo.Connection("10.1.1.111", 12345)["livejournal"]["profiles_seed"]
     start_urls = []
     res = mongo.find()
     for item in res:
@@ -36,12 +37,12 @@ class LiveJournalprofileSpider(CrawlSpider):
         for x,dt in enumerate(dts):
             if dt == "Name:":
                 name = dds[x].select('text()').extract()
-                print 'name:',name
+                # print 'name:',name
                 item['name'] = name
 
             if dt == "Birthdate:":
                 birthday = dds[x].select('text()').extract()
-                print 'birthday:',birthday
+                # print 'birthday:',birthday
                 item['birthday'] = birthday
 
             if dt == "Location:":
@@ -50,7 +51,7 @@ class LiveJournalprofileSpider(CrawlSpider):
                 except:
                     pass
                 else:
-                    print 'Locality:',locality
+                    # print 'Locality:',locality
                     item['locality'] = locality
 
                 try:
@@ -58,12 +59,12 @@ class LiveJournalprofileSpider(CrawlSpider):
                 except:
                     pass
                 else:
-                    print 'country_name:',country_name
+                    # print 'country_name:',country_name
                     item['country_name'] = country_name
 
             if dt == "Website:".encode("utf-8"):
                 website = dds[x].select('a/text()').extract()
-                print 'website:',website
+                # print 'website:',website
                 item['website'] = website
 
             if dt == "External Services:":
@@ -73,9 +74,9 @@ class LiveJournalprofileSpider(CrawlSpider):
 
                     mailname = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-mail"]/span[2]/text()').extract()[0]
                     mailurl = 'mailto:' + mailname
-                    print 'mail:',mailname,mailurl
+                    # print 'mail:',mailname,mailurl
                 except:
-                    print '~'
+                    # print '~'
                     pass
                 else:
                     contacts.append({"mailname":mailname,"mailurl":mailurl})
@@ -83,7 +84,7 @@ class LiveJournalprofileSpider(CrawlSpider):
                 try:
                     twittername = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-twitter"]/a/text()').extract()
                     twitterurl = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-twitter"]/a/@href').extract()
-                    print 'twitter:',twittername,twitterurl
+                    # print 'twitter:',twittername,twitterurl
                 except:
                     pass
                 else:
@@ -92,7 +93,7 @@ class LiveJournalprofileSpider(CrawlSpider):
                 try:
                     vkname = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-vk"]/a/text()').extract()
                     vkurl = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-vk"]/a/@href').extract()
-                    print 'vk:',vkname,vkurl
+                    # print 'vk:',vkname,vkurl
                 except:
                     pass
                 else:
@@ -101,7 +102,7 @@ class LiveJournalprofileSpider(CrawlSpider):
                 try:
                     ljtname = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-ljtalk"]/text()').extract()
                     ljturl = dds[x].select('ul/li[@class = "b-contacts-item b-contacts-ljtalk"]/a/@href').extract()
-                    print 'ljt:',ljtname,ljturl
+                    # print 'ljt:',ljtname,ljturl
                 except:
                     pass
                 else:
@@ -150,18 +151,20 @@ class LiveJournalprofileSpider(CrawlSpider):
                     pass
                 else:
                     contacts.append({"lastfmname":lastfmname,"lastfmurl":lastfmurl})
-                print contacts
+                # print contacts
 
                 item['contacts'] = contacts
 
             if dt == "Schools:":
                 schools = dds[x].select('//div/text()').extract()
-                print 'schools:',schools
+                # print 'schools:',schools
                 item['schools'] = schools
 
         bio = hxs.select('//dd[@class = "b-profile-group-body b-collapse-content"]').extract()
-        print bio
+        # print bio
         item['bio'] = bio
+        print 'finished'
+
         yield item
 
 

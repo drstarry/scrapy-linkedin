@@ -13,8 +13,10 @@ class LivejournalItem(Item):
     url = Field()
     friend = Field()
 
+
 class LivejournalprofileItem(Item):
     _id = Field()
+    profile = Field()
     name = Field()
     birthday = Field()
     locality = Field()

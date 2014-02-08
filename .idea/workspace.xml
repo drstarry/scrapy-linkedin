@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d34e3695-d300-4359-aaf3-6e8d519d4b6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SocialSpider.iml" afterPath="$PROJECT_DIR$/.idea/SocialSpider.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flickr/flickr/spiders/flickrprofile.py" afterPath="$PROJECT_DIR$/flickr/flickr/spiders/flickrprofile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Social/googleplus/googleplus.py" afterPath="$PROJECT_DIR$/../Social/googleplus/googleplus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/livejournal/livejournal/items.py" afterPath="$PROJECT_DIR$/livejournal/livejournal/items.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SAEfrontend/layout.tpl" afterPath="$PROJECT_DIR$/../SAEfrontend/layout.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/livejournal/livejournal/spiders/livejournalprofile.py" afterPath="$PROJECT_DIR$/livejournal/livejournal/spiders/livejournalprofile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SAEfrontend/mail-list.tpl" afterPath="$PROJECT_DIR$/../SAEfrontend/mail-list.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SAEfrontend/mail.tpl" afterPath="$PROJECT_DIR$/../SAEfrontend/mail.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gplus_spider/pluscrawl/pipelines.py" afterPath="$PROJECT_DIR$/../gplus_spider/pluscrawl/pipelines.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/livejournal/livejournal/pipelines.py" afterPath="$PROJECT_DIR$/livejournal/livejournal/pipelines.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gplus_spider/pluscrawl/spiders/pspider.py" afterPath="$PROJECT_DIR$/../gplus_spider/pluscrawl/spiders/pspider.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SAEfrontend/search.tpl" afterPath="$PROJECT_DIR$/../SAEfrontend/search.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SAEfrontend/server.py" afterPath="$PROJECT_DIR$/../SAEfrontend/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/livejournal/livejournal/settings.py" afterPath="$PROJECT_DIR$/livejournal/livejournal/settings.py" />
     </list>
     <ignored path="scrapy-linkedin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,29 +36,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="livejournalprofile.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="livejournalprofile.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/livejournal/livejournal/spiders/livejournalprofile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="126" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3738">
+            <state line="15" column="20" selection-start="472" selection-end="472" vertical-scroll-proportion="0.7446808" vertical-offset="0" max-vertical-offset="3801">
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#666#6640#0" expanded="true" />
-                <element signature="e#6685#6738#0" expanded="true" />
+                <element signature="e#686#6712#0" expanded="true" />
+                <element signature="e#6757#6810#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="id_lists.dat" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/livejournal/livejournal/id_lists.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="147">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/livejournal/livejournal/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="448" selection-end="448" vertical-scroll-proportion="0.25263157" vertical-offset="189" max-vertical-offset="1092">
+            <state line="33" column="29" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1155">
               <folding>
                 <element signature="e#168#200#0" expanded="true" />
                 <element signature="e#351#362#0" expanded="true" />
-                <element signature="e#830#1625#0" expanded="true" />
-                <element signature="e#1665#1807#0" expanded="true" />
+                <element signature="e#427#778#0" expanded="true" />
+                <element signature="e#1745#1887#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/livejournal/livejournal/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="18" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/livejournal/livejournal/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="18" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1176">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,7 +114,9 @@
         <option value="$PROJECT_DIR$/../Social/googleplus/googleplus.py" />
         <option value="$PROJECT_DIR$/../gplus_spider/pluscrawl/spiders/pspider.py" />
         <option value="$PROJECT_DIR$/../gplus_spider/pluscrawl/pipelines.py" />
+        <option value="$PROJECT_DIR$/livejournal/livejournal/settings.py" />
         <option value="$PROJECT_DIR$/livejournal/livejournal/spiders/livejournalprofile.py" />
+        <option value="$PROJECT_DIR$/livejournal/livejournal/items.py" />
         <option value="$PROJECT_DIR$/livejournal/livejournal/pipelines.py" />
       </list>
     </option>
@@ -420,7 +446,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.googleplus">
+  <component name="RunManager" selected="Python.livejournalprofile">
     <configuration default="false" name="re_try" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -455,6 +481,24 @@
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="livejournalprofile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/livejournal/livejournal/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SocialSpider" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/livejournal/livejournal/spiders/livejournalprofile.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -578,14 +622,16 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.re_try" />
       <item index="1" class="java.lang.String" itemvalue="Python.googleplus" />
+      <item index="2" class="java.lang.String" itemvalue="Python.livejournalprofile" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.googleplus" />
-        <item index="1" class="java.lang.String" itemvalue="Python.re_try" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.livejournalprofile" />
+        <item index="1" class="java.lang.String" itemvalue="Python.googleplus" />
+        <item index="2" class="java.lang.String" itemvalue="Python.re_try" />
       </list>
     </recent_temporary>
   </component>
@@ -617,17 +663,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="-4" width="1630" height="1055" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5024233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48057714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17166042" sideWeight="0.7735849" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17166042" sideWeight="0.5194229" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14596273" sideWeight="0.2924071" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2264151" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2264151" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -653,26 +699,21 @@
           <url>file://$PROJECT_DIR$/../Social/twitter.db.py</url>
           <line>3</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/livejournal/livejournal/pipelines.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/livejournal/livejournal/spiders/livejournalprofile.py</url>
+          <line>166</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../SAEfrontend/mail-list.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2772" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SAEfrontend/layout.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SAEfrontend/knowledge_drift.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../SAEfrontend/bottle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1020408" vertical-offset="1026" max-vertical-offset="22734" />
@@ -763,25 +804,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/livejournal/livejournal/spiders/livejournalprofile.py">
+    <entry file="file://$PROJECT_DIR$/livejournal/livejournal/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="126" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3738">
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#666#6640#0" expanded="true" />
-            <element signature="e#6685#6738#0" expanded="true" />
-          </folding>
+        <state line="20" column="18" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1176">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/livejournal/livejournal/id_lists.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/livejournal/livejournal/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="448" selection-end="448" vertical-scroll-proportion="0.25263157" vertical-offset="189" max-vertical-offset="1092">
+        <state line="33" column="29" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1155">
           <folding>
             <element signature="e#168#200#0" expanded="true" />
             <element signature="e#351#362#0" expanded="true" />
-            <element signature="e#830#1625#0" expanded="true" />
-            <element signature="e#1665#1807#0" expanded="true" />
+            <element signature="e#427#778#0" expanded="true" />
+            <element signature="e#1745#1887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/livejournal/livejournal/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="18" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/livejournal/livejournal/spiders/livejournalprofile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="472" selection-end="472" vertical-scroll-proportion="0.7446808" vertical-offset="0" max-vertical-offset="3801">
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#686#6712#0" expanded="true" />
+            <element signature="e#6757#6810#0" expanded="true" />
           </folding>
         </state>
       </provider>

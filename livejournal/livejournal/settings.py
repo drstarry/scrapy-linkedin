@@ -12,26 +12,23 @@ BOT_NAME = 'livejournal'
 SPIDER_MODULES = ['livejournal.spiders']
 NEWSPIDER_MODULE = 'livejournal.spiders'
 
-DEFAULT_ITEM_CLASS = 'livejournal.items.livejournalItem'
+DEFAULT_ITEM_CLASS = 'livejournal.items.LivejournalprofileItem'
 # ITEM_PIPELINES = {
 # 'livejournal.pipelines.PricePipeline': 300,
 # 'livejournal.pipelines.JsonWriterPipeline': 800,
 # }
-########### Item pipeline
-# ITEM_PIPELINES = [
-#     "livejournal.pipelines.MongoDBPipeline",
-# ]
+########## Item pipeline
+ITEM_PIPELINES = [
+    "livejournal.pipelines.MongoDBPipeline",
+]
 
-# #in
-# MONGODB_SERVER = '10.1.1.111'
-# #out
-# #MONGODB_SERVER = ''
-# MONGODB_PORT = 12345
+MONGODB_SERVER = '10.1.1.111'
+MONGODB_PORT = 12345
 # # MONGODB_SERVER = 'localhost'
 # # MONGODB_PORT = 27017
-# MONGODB_DB = 'livejournal'
-# MONGODB_COLLECTION = 'profiles'
-# MONGODB_UNIQ_KEY = '_id'
+MONGODB_DB = 'livejournal'
+MONGODB_COLLECTION = 'profiles_seed'
+MONGODB_UNIQ_KEY = '_id'
 # ###########
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
