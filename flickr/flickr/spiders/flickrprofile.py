@@ -1,8 +1,8 @@
 from scrapy.selector import HtmlXPathSelector
 from scrapy.contrib.spiders import CrawlSpider
-from scrapy.http import Request
+#from scrapy.http import Request
 
-from ..items import FlickrProfileItem
+#from ..items import FlickrProfileItem
 
 
 class FlickrprofileSpider(CrawlSpider):

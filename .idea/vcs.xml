@@ -2,6 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../SAEfrontend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../SNS-Spider-Demos-for-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Social" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gplus_spider" vcs="Git" />
   </component>
 </project>
 

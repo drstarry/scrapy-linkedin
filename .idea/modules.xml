@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SAEfrontend/.idea/SAEfrontend.iml" filepath="$PROJECT_DIR$/../SAEfrontend/.idea/SAEfrontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SNS-Spider-Demos-for-test/.idea/SNS-Spider-Demos-for-test.iml" filepath="$PROJECT_DIR$/../SNS-Spider-Demos-for-test/.idea/SNS-Spider-Demos-for-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Social/.idea/Social.iml" filepath="$PROJECT_DIR$/../Social/.idea/Social.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SocialSpider.iml" filepath="$PROJECT_DIR$/.idea/SocialSpider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../scholarScape/.idea/scholarScape.iml" filepath="$PROJECT_DIR$/../scholarScape/.idea/scholarScape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gplus_spider/.idea/gplus_spider.iml" filepath="$PROJECT_DIR$/../gplus_spider/.idea/gplus_spider.iml" />
     </modules>
   </component>
 </project>

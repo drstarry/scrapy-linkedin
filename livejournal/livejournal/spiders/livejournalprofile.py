@@ -2,16 +2,21 @@ from scrapy.selector import HtmlXPathSelector
 from scrapy.contrib.spiders import CrawlSpider
 from scrapy.http import Request
 
-# from ..items import LivejournalprofileItem
+from ..items import LivejournalprofileItem
 
 
 class LiveJournalprofileSpider(CrawlSpider):
     name = "livejournalprofile"
     allowed_domains = []
-    g_ = open('id_lists.dat', 'r')
+    # g_ = open('id_lists.dat', 'r')
+    mongo = pymongo.Connection("10.1.1.111", 12345)["livejournal"]["profiles"]
     start_urls = []
-    for e in g_:
-        start_urls.append('http://www.' + e.strip() + '.livejournal.com/profile/')
+    res = mongo.find()
+    for item in res:
+        if "profile" in item:
+            if item["profile"]:
+                continue
+        start_urls.append('http://www.' + item["_id"] + '.livejournal.com/profile/')
 
 
     def parse(self, response):
@@ -24,20 +29,20 @@ class LiveJournalprofileSpider(CrawlSpider):
         # print dts
         dds = hxs.select('//dl[@class = "b-profile-group b-profile-userinfo"]/dd')
 
-        # item = LivejournalprofileItem()
-        # item['_id'] = self.get_username(response.url)
+        item = LivejournalprofileItem()
+        item['_id'] = self.get_username(response.url)
         print 'id:',self.get_username(response.url)
 
         for x,dt in enumerate(dts):
             if dt == "Name:":
                 name = dds[x].select('text()').extract()
                 print 'name:',name
-                # item['name'] = name
+                item['name'] = name
 
             if dt == "Birthdate:":
                 birthday = dds[x].select('text()').extract()
                 print 'birthday:',birthday
-                # item['birthday'] = birthday
+                item['birthday'] = birthday
 
             if dt == "Location:":
                 try:
@@ -46,7 +51,7 @@ class LiveJournalprofileSpider(CrawlSpider):
                     pass
                 else:
                     print 'Locality:',locality
-                    # item['locality'] = locality
+                    item['locality'] = locality
 
                 try:
                     country_name = dds[x].select('a[@class = "country-name"]/text()').extract()
@@ -54,15 +59,15 @@ class LiveJournalprofileSpider(CrawlSpider):
                     pass
                 else:
                     print 'country_name:',country_name
-                    # item['country_name'] = country_name
+                    item['country_name'] = country_name
 
             if dt == "Website:".encode("utf-8"):
                 website = dds[x].select('a/text()').extract()
                 print 'website:',website
-                # item['website'] = website
+                item['website'] = website
 
             if dt == "External Services:":
-                # item['contacts'] = []
+                item['contacts'] = []
                 contacts = []
                 try:
 
@@ -147,17 +152,17 @@ class LiveJournalprofileSpider(CrawlSpider):
                     contacts.append({"lastfmname":lastfmname,"lastfmurl":lastfmurl})
                 print contacts
 
-                # item['contacts'] = contacts
+                item['contacts'] = contacts
 
             if dt == "Schools:":
                 schools = dds[x].select('//div/text()').extract()
-                # print 'schools:',schools
-                # item['schools'] = schools
+                print 'schools:',schools
+                item['schools'] = schools
 
         bio = hxs.select('//dd[@class = "b-profile-group-body b-collapse-content"]').extract()
-        # print bio
-        # item['bio'] = bio
-        # yield item
+        print bio
+        item['bio'] = bio
+        yield item
 
 
 

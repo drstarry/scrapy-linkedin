@@ -5,6 +5,7 @@
 
 from scrapy.conf import settings
 from scrapy import log
+from items import LivejournalprofileItem
 
 class LivejournalPipeline(object):
     def process_item(self, item, spider):
@@ -24,6 +25,12 @@ class MongoDBPipeline(object):
         if self.__get_uniq_key() is None:
             self.collection.insert(dict(item))
         else:
+            old_item = self.collection.find_one({"_id": item["_id"]})
+            if type(item) is LivejournalprofileItem:
+                print "Append profile for", item["_id"]
+                for k in item:
+                    old_item[k] = item[k]
+                old_item["profile"] = True
             self.collection.update(
                             {self.__get_uniq_key(): item[self.__get_uniq_key()]},
                             dict(item),

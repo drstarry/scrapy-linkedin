@@ -2,9 +2,13 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 2.7.5+ (/usr/bin/python2.7)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="scholarScape" />
+    <orderEntry type="module" module-name="SAEfrontend" />
+    <orderEntry type="module" module-name="Social" />
+    <orderEntry type="module" module-name="SNS-Spider-Demos-for-test" />
+    <orderEntry type="module" module-name="gplus_spider" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="myDocStringFormat" value="Plain" />
